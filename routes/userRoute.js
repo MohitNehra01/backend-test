@@ -1,6 +1,6 @@
 const express = require('express');
 const { register,login , getUserDetail, logout , getAllUser} = require('../controlers/authControler');
-// const upload = require('../middleware/multer.middleware')
+const upload = require('../middleware/multer.middleware')
 const fetchUser = require('../middleware/fetchUser')
 const router = express.Router();
 
