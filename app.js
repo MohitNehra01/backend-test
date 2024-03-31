@@ -14,9 +14,9 @@ app.use(morgan('dev'))
 app.use("/" , (req,res)=>{
     return res.json({message: "Hellow From Express App"})
  })
-app.use('/api/auth',require('./routes/userRoute'))
-app.use('/api/conversation', require('./routes/conversation'))
-app.use('/api/message' ,require('./routes/messageRoute'))
+// app.use('/api/auth',require('./routes/userRoute'))
+// app.use('/api/conversation', require('./routes/conversation'))
+// app.use('/api/message' ,require('./routes/messageRoute'))
 
 app.all('*',(req,res)=>{
     res.status(404).send('OOPS!! 404 page not found')
