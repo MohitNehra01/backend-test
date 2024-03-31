@@ -23,7 +23,7 @@ const upload = multer({
             return;
         }
 
-        cb(null , true);
+        return cb(null , true);
     }
 })
 
